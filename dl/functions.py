@@ -29,6 +29,7 @@ def data_accuracy(net, data_iter):
     return sum_list(acc) / total
 
 
+# 采用torch下loss和updater时的训练函数
 def train_module_of_torch(net, data_iter, test_iter, loss, updater, epoch):
     for i in range(epoch):
         loss_value = []
